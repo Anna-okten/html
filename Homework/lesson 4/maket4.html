@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            height: 0;
+            box-sizing: border-box;}
+
+            .center{
+                display: flex;
+                height: 30vh;
+            background: #8D8484;
+            justify-content: center;
+            align-items: center;}
+.flex{
+    display: flex;
+    }
+
+          .content-1{
+              background: #776969;
+          }
+          .content-2{
+              background: #643030;
+          }
+          .content-3{
+              background: #441818;
+          }
+.content-1, .content-2, .content-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 20vh;
+}
+.spam-1,.spam-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 30vh;
+
+}
+        .spam-1{
+            background: #937575;
+        }
+        .spam-2{
+            background: #644C4C;
+        }
+        footer{
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            background: #BDBDBD;
+                    }
+    </style>
+</head>
+<body>
+<header class="center">
+    <h2>Header</h2></header>
+    <div class="flex">
+        <section>
+            <div class="content-1"><p>Content-1</p></div>
+            <div class="content-2"><p>Content-1</p></div>
+            <div class="content-3"><p>Content-1</p></div>
+
+        </section>
+        <section>
+            <div class="spam-1"><p>Spam-1</p></div>
+            <div class="spam-2"><p>Spam-2</p></div>
+        </section>
+
+    </div>
+
+<footer class="center"> <h2>Footer</h2></footer>
+
+</body>
+</html>

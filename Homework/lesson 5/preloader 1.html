@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .animation{
+      width: 250px;
+      height: 250px;
+      margin: 100px auto 0 auto;
+      background-color: blueviolet;
+      border-bottom: 10px solid black;
+      border-top: 10px solid black;
+      border-left: 10px solid deeppink;
+      border-right: 10px solid deeppink;
+      animation: picture 3s linear infinite alternate;
+    }
+    @keyframes picture {
+      from{
+        transform: rotate(200deg)scale(1.5);
+      }
+      to{
+        transform:  rotate(-200deg) scale(1) ;
+        background-color: green;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<div class="animation"></div>
+</body>
+</html>

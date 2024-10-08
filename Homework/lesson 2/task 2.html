@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+*{
+  margin: 0;
+}
+.square{
+      height: 400px;
+      background-color: burlywood;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 70px;
+    }
+    .circle{
+      width:100px ;
+      height: 100px;
+      background-color: orangered;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    }
+    .circle:hover{
+      background-color: gray;
+      border-radius: 50%;
+      transition: 3s;
+    }
+  </style>
+</head>
+<body>
+<div class="square">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+</body>
+</html>

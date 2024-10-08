@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .autumn{
+      margin: 100px auto;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: picture 3s linear 3 alternate;
+    }
+    .autumn img{
+     width: 150px;
+      height: 150px;
+    }
+@keyframes picture {
+  from{
+transform: scale(1.8) translateY(300px);
+  }
+  50%{
+    border: 2px solid orangered;
+  }
+  to{
+    transform: scale(1);
+  }
+}
+  </style>
+</head>
+<body>
+<div class="autumn">
+<img src="img/autumn.png" alt="">
+</div>
+</body>
+</html>
