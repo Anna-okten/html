@@ -1,0 +1,65 @@
+body{
+    font-family: Arial,sans-serif;
+}
+.Form{
+    margin: 0 auto;
+    width: 25vw;
+    height: 70vh;
+}
+.login{
+    width: 100%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+}
+input[type="text"],
+input[type="password"]{
+    width: 78%;
+    padding: 3% 1%;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+}
+input[type="submit"] {
+    background-color: #68b5fa;
+    width: 78%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+.login,.Form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+Form span{
+    margin: 10px 0;
+    color: gray;
+}
+Form p svg{
+    margin-bottom: -5px;
+}
+Form p{
+    color:#155694 ;
+    margin: 15px 0;
+}Form a{
+     color:#155694 ;
+     margin-bottom: 15px;
+    text-decoration: none;
+ }
+.registration{
+    height: 17%;
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+}
+.registration a{
+    color:#68b5fa ;
+    text-decoration: none;
+    font-weight: 600;
+
+}

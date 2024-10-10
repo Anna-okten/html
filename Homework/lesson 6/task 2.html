@@ -12,27 +12,64 @@
      display: flex;
      justify-content: center;
      align-items: center;
+       font-family: Arial,sans-serif;
 
    }
    .form-registration{
        width: 45vw;
        height: 50vh;
-       background-color: #d6d0d0;
+       background-color: white;
        border-radius: 20px;
    }
+   .form-registration div:nth-child(1){
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(0, 139, 139, 0.35);
+       height: 20%;
+   }
+   .form-registration div:nth-child(1) h1{
+     font-weight:400;
+   }
+   .form-registration form{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   input[type="text"],
+   input[type="password"]{
+       width: 300px;
+       height: 30px;
+       margin: 15px;
+   }
+   .form-registration>form>div{
+       width: 300px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding-top: 15px;
+   }
+form input[type="submit"]{
+    background-color: rgba(119, 111, 111, 0.65);
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
 
  </style>
 <body>
- <div>
+ <div class="form-registration">
    <div>
   <h1>Вхід в особистий кабінет</h1>
    </div>
-  <form class="form-registration">
-    <input type="text" name="login">
-    <input type="password" name="password">
+  <form>
+    <input type="text" name="login" placeholder="Логін або email">
+    <input type="password" name="password" placeholder="Пароль">
       <div>
           <label>
-              Запамятати мене
+              Запам'ятати мене
               <input type="checkbox" name="remember">
           </label>
           <input type="submit" value="Вхід">
